@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week2 Assignment</title>
+</head>
+<body>
+    <header>
+        <h2>This webpage demonstrates the use of lists, external images, tables, and forms</h2>
+        <hr>
+    </header>
+    <main>
+        <h3><u>Lists</u></h3>
+        <p>This is an ordered list of a 'Likert' scale with roman numerals</p>
+        <ol type="I" reversed>
+            <li>Strongly Agree</li>
+            <li>Agree</li>
+            <li>Neutral</li>
+            <li>Disagree</li>
+            <li>Strongly Disagree</li> 
+        </ol>
+        <hr>
+        <h3><u>External image from <a href="https://pexels.com" style="color: rgb(0, 132, 255)">pexels.com</a></u></h3>
+        <a href="https://www.pexels.com/photo/a-puppy-in-dog-clothes-in-sunlight-15798188/" target="_blank"><img src="https://images.pexels.com/photos/15798188/pexels-photo-15798188/free-photo-of-a-puppy-in-dog-clothes-in-sunlight.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load" alt="A very cute dog" width="500" height="700" title="cute dog from pexels.com"></a>
+        <p>A cute dog</p>
+        <hr>
+        <h3><u>Table</u></h3>
+        <table border="0.1"style="background-color:black">
+            <caption>Table with 5 contacts</caption>
+            <thead >
+                <tr align="center" style="background-color:rgb(129, 204, 204)">
+                    <th width="250" height="50">Name</th>
+                    <th width="250">Address</th>
+                    <th width="250">Mobile</th>
+                    <th width="250">Email</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr align="center" style="background-color:wheat">
+                    <td>Charles Agwonder</td>
+                    <td>199-40606 Nairobi </td>
+                    <td>+254-700-000-111</td>
+                    <td>charles@email.com</td>
+                </tr>
+                <tr align="center" style="background-color:wheat">
+                    <td>Kevin Okello</td>
+                    <td>210-40616 Nairobi </td>
+                    <td>+254-700-000-222</td>
+                    <td>Kevin@email.com</td>
+                </tr>
+                <tr align="center" style="background-color:wheat">
+                    <td>Yvine Angeline</td>
+                    <td>333-01000 Nairobi </td>
+                    <td>+254-700-300-456</td>
+                    <td>Yvine@email.com</td>
+                </tr>
+                <tr align="center" style="background-color:wheat">
+                    <td>Mary Hills</td>
+                    <td>243-01000 Nairobi </td>
+                    <td>+254-712-334-456</td>
+                    <td>Maryhills@email.com</td>
+                </tr>
+                <tr align="center" style="background-color:wheat">
+                    <td>Harnington Sam</td>
+                    <td>456-01000 Mombasa </td>
+                    <td>+254-743-010-423</td>
+                    <td>HarningtonSam@email.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3><u>Registration Form</u></h3>
+        <form>
+            <fieldset>
+                <legend style="text-align:center">Register</legend>
+                
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="UserName" required>
+                <br>
+                
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="johndoe@email.com" required>
+                <br>
+                
+                <br>
+                <label for="countries">Country: </label>
+                <input name="country" aria-label="Country" list="countries" placeholder="---Select Your Country---" required>
+                <datalist id="countries">
+                    <option value="USA"></option>
+                    <option value="Canada"></option>
+                    <option value="Mexico"></option>
+                    <option value="Brazil"></option>
+                    <option value="Argentina"></option>
+                    <option value="Chile"></option>
+                    <option value="Peru"></option>
+                    <option value="Colombia"></option>
+                    <option value="Venezuela"></option>
+                    <option value="Ecuador"></option>
+                    <Option value="Kenya"></Option>
+                    <option value="Uganda"></option>
+                    <option value="Tanzania"></option>
+                    <option value="Sudan"></option>
+                    <option value="South Sudan"></option>
+                    <option value="Nigeria"></option>
+                    <option value="South Africa"></option>
+                </datalist>
+                <br>
+
+                <br>
+                <label for="date">Data of Birth: </label>
+                <input type="date" id=" data" required placeholder="DoB">
+                <br>
+
+                <br>
+                <label for="gender">Gender: </label>
+                <label for="Male"> Male </label>
+                <input type="radio" id="Male" name="Gender" required>
+                <label for="Female"> Female </label>
+                <input type="radio" id="Female" name="Gender" required>
+                <br>
+                
+                <br>
+                <label for="password">Password: </label>
+                <input type="password" id="password" required>
+                <br>
+
+                <br>
+                <label for="terms">Agree to terms and conditions: </label>
+                <input type="checkbox" id="terms" required>
+                <br>
+                
+                <br>
+                <input type="Submit" value="Submit">
+                <input type="Reset" value="Reset">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
